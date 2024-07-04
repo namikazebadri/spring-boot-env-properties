@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController(value = "/")
 class HomeController(
-    private val environment: Environment,
-    private val serviceProperties: ServiceProperties,
-    @Value("\${app.service.name}")
+    private val environment: Environment, // using environment class
+    private val serviceProperties: ServiceProperties, // from configuration properties
+    @Value("\${app.service.name}") // properties without default value
     private val serviceName: String,
-    @Value("\${app.service.version}")
+    @Value("\${app.service.version}") // default value defined in properties file
     private val serviceVersion: String,
-    @Value("\${app.service.author:Unis Badri}")
+    @Value("\${app.service.author:Unis Badri}") //default value defined in @Value
     private val serviceAuthor: String
 ) {
     @GetMapping("")
