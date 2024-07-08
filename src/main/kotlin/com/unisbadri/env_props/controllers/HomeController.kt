@@ -23,6 +23,7 @@ class HomeController(
             <p style="line-height:1.5">
                 <strong>Service Name</strong>: $serviceName<br/>
                 <strong>Service Name (from Environment class)</strong>: ${environment.getProperty("app.service.name")}<br/>
+                <strong>Service Address (from Environment class with default value)</strong>: ${environment.getProperty("app.service.address", "127.0.0.1")}<br/>
                 <strong>Service Name (from ConfigurationProperties class)</strong>: ${serviceProperties.name}<br/>
                 <strong>Service Version (from env with default value in properties)</strong>: $serviceVersion<br/>
                 <strong>Service Author</strong>: $serviceAuthor
