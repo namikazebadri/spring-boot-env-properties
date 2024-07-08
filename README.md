@@ -26,4 +26,4 @@ Run Spring Boot:
 
 ## Author
 
-Unis Badri (https://unisbadri.com)
+[Unis Badri](https://unisbadri.com) (namikaze.badri@gmail.com)
